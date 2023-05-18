@@ -1,0 +1,134 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav__black {
+  background-color: #111;
+}
+
+.nav__logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.nav__avatar {
+  position: fixed;
+  margin-right: 20px;
+  right: 40px;
+  width: 30px;
+  object-fit: contain;
+}
+.nav__list{
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  color: aliceblue;
+}
+
+.nav__search-icon {
+  font-size: 1.5rem;
+  color: #e8e0e0;
+  margin-left: 200px
+}
+
+.nav__search-container input {
+  border: none;
+  border-radius: 2rem;
+  padding: .8rem 1rem 0.8rem 3rem;
+  background-color: #333;
+  color: #fff;
+  width: 15rem
+
+  
+}
+.nav__search-container {
+display: flex;
+justify-content: space-between;
+padding: 10px
+}
+.nav__list li{
+  margin-right: 40px;
+  text-decoration: none;
+  list-style: none;
+}
+.nav__list-container {
+margin-right: 200px;
+}
+.nav__list-container ul li{
+  list-style: none;
+  text-decoration: none;
+
+}
+.nav__search-container{
+  margin-right: 80px;
+  justify-content: space-between; 
+}
+.nav__item{
+ text-decoration: none;
+ color: #e8e0e0;
+padding-right: 5px;
+}
+.nav__item3{
+  padding-right: 100px;
+
+}
+.nav__item{
+  text-decoration: none;
+}
+.nav__bell{
+  color: aliceblue;
+  margin-right: 30px;
+}
+.search{
+  color: aliceblue;
+  
+}
+.tv{
+  text-decoration: none;
+  color: #fff;  
+}
+@media screen and (max-width: 768px) {
+.nav__list {
+display: none;
+}
+.nav__search-container {
+display: flex;
+flex-direction: column;
+}
+ .nav__bell{ 
+   display: none; 
+  
+ } 
+
+.nav__search-container .nav__list {
+ display: none; 
+ flex-direction: column; 
+ margin-top: 1rem;
+}
+.nav__search-container .nav__item2, 
+.nav__search-container .nav__item3 {
+ margin-top: 5rem; 
+ }
+ 
+ .search{ 
+  margin-right: 30px; 
+  display: flex;   
+ } 
+
+  }  
